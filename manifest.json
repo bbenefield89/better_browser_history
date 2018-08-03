@@ -1,0 +1,15 @@
+{
+  "name": "Better Browser History",
+  "version": "0.1",
+  "description": "Deletes your Google Chrome browser history and replaces it with non-incriminating websites because nothing is more suspicious than an empty browser history.",
+  "background": {
+    "scripts": [ "js/background.js" ],
+    "persistent": false
+  },
+  "options_page": "html/options.html",
+  "page_action": {
+    "default_popup": "html/popup.html"
+  },
+  "permissions": [ "declarativeContent", "history" ],
+  "manifest_version": 2
+}
