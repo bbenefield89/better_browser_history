@@ -1,3 +1,22 @@
+/**
+ * @summary creates the BlackListedSiteNamesItem class
+ * 
+ * @description this class is reponsible for each new black listed site name that has been
+ * defined by a user from the `popup.html` portion of this extension. This class defines
+ * the elements value, innerText, as well as it's click handler, `addEventListener('click', ...)`,
+ * as well as this elements insertion into the DOM and parent element
+ * 
+ * @author Brandon Benefield
+ * @access public
+ * @borrows localStorage.getItem('sites')
+ * @class BlackListedSiteNamesItem
+ * @exports BlackListedSiteNamesItem
+ * @param {string} value
+ * @param {string} type
+ * @param {HTML Node} parent
+ * @since 1.0.0
+ * @version 1.0.0
+ */
 export default class BlackListedSiteNamesItem {
   constructor(value, type, parent) {
     // props
