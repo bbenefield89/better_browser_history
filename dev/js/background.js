@@ -32,4 +32,4 @@ if (!localStorage.getItem('sites'))
       // and now have black listed `http://www.example/com` then ALL occurrences of `http://www.example.com` will now be removed from your history
       chrome.history.deleteUrl({ url: siteData.url });
     }
-});
+  });
