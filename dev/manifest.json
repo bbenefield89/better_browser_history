@@ -10,6 +10,9 @@
   "page_action": {
     "default_popup": "html/popup.html"
   },
-  "permissions": [ "declarativeContent", "history" ],
+  "permissions": [
+    "declarativeContent",
+    "history"
+  ],
   "manifest_version": 2
 }
