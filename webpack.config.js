@@ -1,5 +1,21 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const background = {
+  entry: './dev/js/background.js',
+  output: {
+    path: __dirname + '/build/js',
+    filename: 'background.js'
+  },
+  devtool: 'sourcemap',
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: '../html/background.html',
+      hash: true,
+    })
+  ],
+  mode: 'development'
+};
+
 const popup = {
   entry: './dev/js/popup.js',
   output: {
@@ -35,6 +51,7 @@ const options = {
 };
 
 module.exports = [
+  background,
   popup,
   options
 ];
