@@ -17,10 +17,12 @@ for (site in localStorageSitesList) {
 }
 
 for (let i = 0; i < blackListedSitenamesList.children.length; i++) {
-  // add an event listener for each site name in teh list
+  // add an event listener for each site name in the list
   blackListedSitenamesList.children[ i ].addEventListener('click', function (e) {
     delete localStorageSitesList[ this.innerText ];  // delete site name from object
+
     localStorage.setItem('sites', JSON.stringify(localStorageSitesList));
+
     blackListedSitenamesList.removeChild(this);  // remove this element from the DOM
   });
 }
