@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "popup_build": "webpack-cli --mode production --devtool sourcemap --watch ./dev/js/popup.js --entry ./dev/js/popup.js --output ./build/js/popup.js"
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -23,10 +22,9 @@
   },
   "homepage": "https://github.com/bbenefield89/better_browser_history#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0"
   },
-  "dependencies": {
-    "html-webpack-plugin": "^3.2.0"
-  }
+  "dependencies": {}
 }
