@@ -1,3 +1,14 @@
+/**
+ * @summary script that is ran on the `popup.html` portion of this extension
+ * 
+ * @description Handles adding a new site to the users list of black listed sites to prevent them
+ * from showing up on a users Google Chrome browser history
+ * 
+ * @author Brandon Benefield
+ * @since 1.0.0
+ * @version 1.0.0
+ */
+
 const submitSitenameButton  = document.querySelector('.sitename_form__sitename_submit_button');
 const sitenameInput         = document.querySelector('.sitename_form__sitename_input');
 

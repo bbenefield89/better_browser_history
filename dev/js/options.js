@@ -1,3 +1,15 @@
+/**
+ * @summary creates each reuired black listed site element
+ * 
+ * @description For each site name in the black listed site list, `localStorage.getItem('sites')`,
+ * this script will create a new element using the `BlackListedSiteNamesItem` class and inserts
+ * this element into the parent `UL` element in `options.html`
+ * 
+ * @author Brandon Benefield
+ * @since 1.0.0
+ * @version 1.0.0
+ */
+
 import BlackListedSiteNamesItem from './classes/BlackListedSiteNamesItem';
 
 const blackListedSitenamesList = document.querySelector('.blacklisted_sitenames_list');
