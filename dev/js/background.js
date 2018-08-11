@@ -1,3 +1,17 @@
+/**
+ * @summary background.js
+ * 
+ * @description This background script waits for the `history.onVisited` event to fire
+ * before being activated. When activated this script determines if the URL that the
+ * user is currently navigating to has been defined in the users list of "black listed URL's".
+ * If true this script will remove this URL, along with all occurences of previous visits to
+ * this URL, from the users Chrome browser history
+ * 
+ * @author Brandon Benefield
+ * @since 1.0.0
+ * @version 1.0.0
+ */
+
 const rules = {
   conditions: [ new chrome.declarativeContent.PageStateMatcher({ pageUrl: { schemes: [ 'https', 'http' ] } }) ],
   actions: [ new chrome.declarativeContent.ShowPageAction() ]
