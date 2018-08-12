@@ -8,7 +8,6 @@
  * 
  * @author Brandon Benefield
  * @access public
- * @borrows localStorage.getItem('sites')
  * @class BlackListedSiteNamesItem
  * @exports BlackListedSiteNamesItem
  * @param {string} value
