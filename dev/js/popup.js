@@ -9,6 +9,8 @@
  * @version 1.0.0
  */
 
+require('../less/popup.less');
+ 
 const submitSitenameButton  = document.querySelector('.sitename_form__sitename_submit_button');
 const sitenameInput         = document.querySelector('.sitename_form__sitename_input');
 
