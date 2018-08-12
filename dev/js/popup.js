@@ -25,7 +25,6 @@ submitSitenameButton.addEventListener('click', e => {
 
   const sitenameInputVal = sitenameInput.value;
   
-  // localStorageSitesList.push(sitenameInputVal);
   localStorageSitesList[ sitenameInputVal ] = sitenameInputVal;
   localStorage.setItem('sites', JSON.stringify(localStorageSitesList));
 });
