@@ -9,6 +9,7 @@
  * @version 1.0.0
  */
 
+// loads in the less file(s) for this script/html page
 require('../less/popup.less');
  
 const submitSitenameButton  = document.querySelector('.sitename_form__sitename_submit_button');
