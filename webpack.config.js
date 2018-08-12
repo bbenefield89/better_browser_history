@@ -23,6 +23,18 @@ const popup = {
     filename: 'popup.js'
   },
   devtool: 'sourcemap',
+  module: {
+    rules: [{
+      test: /\.less$/,
+      use: [{
+        loader: 'style-loader'
+      }, {
+        loader: 'css-loader', options: { sourceMap: true }
+      }, {
+        loader: 'less-loader', options: { sourceMap: true }
+      }]
+    }]
+  },
   plugins:[
     new HtmlWebpackPlugin({
       filename: '../html/popup.html',
