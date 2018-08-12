@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch",
-    "lessc": "lessc"
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
