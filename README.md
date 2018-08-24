@@ -35,7 +35,7 @@ Better Browser History is a lightweight Google Chrome Extension to help manage w
 
 ## FAQ
 Q. Websites aren't being removed from my Google Chrome browser history  
-A. There is a bug that has been around since 2014 that prevents the Google Chrome Extensions API from altering the browsers history unless history sync has been turned off in the browser
+A. There is a [bug](https://bugs.chromium.org/p/chromium/issues/detail?id=395955) that has been around since 2014 that prevents the Google Chrome Extensions API from altering the browsers history unless history sync has been turned off in the browser
 
 ## Contributors
 <img alt="Brandon Benefield - Repo Maintainer" src="https://avatars0.githubusercontent.com/u/29239201?v=4" width="100">
