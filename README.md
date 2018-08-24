@@ -3,23 +3,34 @@ Better Browser History is a lightweight Google Chrome Extension to help manage w
 
 ## Install
 1. Download or clone this repo
+
 2. Open Google Chrome and navigate to `chrome://extensions`
+
 3. In the top left corner click on the button that says `Load Unpacked`
-4. Navigate to where you downloaded or cloned this repo into and with a single left mouse click choose either the `dev` or `build` directory and choose `open` in the bottom left
+
+4. Navigate to where you downloaded or cloned this repo into and with a single left mouse click choose either the `dev` or if you have `Yarn` or `NPM` you can navigate to the root directory of this repo and run `yarn build` or `npm build`. From there select the `build` directory and choose `open` in the bottom left
+
 5. You're done
 
 ## Usage
-### Blacklist Websites
+### Deny Websites
 1. Navigate to almost any page, e.g. http://www.example.com/, and you should now see a new extension labeled with a capital `B`
+
 2. Single left mouse click the extensions (the capital `B`)
+
 3. Add the domain name of any website, e.g. `example`
+
 4. Navigate back to `http://www.example.com`
+
 5. Check Google Chrome's browser history, `CTRL + h`
+
 6. `http://www.example.com` will no longer show up in your Google Chrome browser history
 
-### Whitelist Websites (remove from blacklist)
+### Accept Websites (remove from the Deny list)
 1. Right click the extension (the capital `B`)
+
 2. Single left mouse click on any website you may have added to the blacklist
+
 3. This website will now begin to show up in your Google Chrome browser history
 
 ## FAQ
